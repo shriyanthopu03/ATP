@@ -36,3 +36,18 @@ let updatedUser=user
 console.log(user)
 updatedUser={...updatedUser,age:25}
 console.log(updatedUser)
+
+
+
+//💡 Exercise 3: Create a function that receives any number of args as arguments and return their sum using REST parameter
+function sum(...numbers) {
+  let total = 0;
+  for (let num of numbers) {
+    total += num;
+  }
+  return total;
+}
+console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+
+
+
